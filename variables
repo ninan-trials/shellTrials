@@ -1,0 +1,37 @@
+#!/bin/bash
+
+myName="Ninan"
+
+declare -r AGE=21
+
+num2=7
+
+
+num3=$((AGE+num2))
+num4=$((AGE-num2))
+num5=$((AGE*num2))
+num6=$((AGE/num2))
+
+echo "21 + 7 = $num3"
+
+echo "$num3"
+echo "$num4"
+echo "$num5"
+echo "$num6"
+
+echo $((5**2))
+
+echo $(( 5%4 ))
+
+rand=7
+let rand+=4
+
+echo "$rand"
+echo "rand is now 11"
+echo "rand++: $(( rand++ ))"
+echo "$rand"
+echo "rand--: $(( rand-- ))"
+echo "$rand"
+echo "--rand: $(( --rand ))"
+echo "++rand: $(( ++rand ))"
+

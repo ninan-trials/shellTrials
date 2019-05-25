@@ -1,0 +1,37 @@
+#!/in/bash
+
+getDate(){
+	date
+	return
+}
+getDate
+
+#Global variable and Local variable
+name="Ninan"
+
+localVar(){
+				name="John"
+				echo "$name"
+				return
+}
+
+echo "$name"
+
+localVar
+
+#Function to sum two inputs
+getSum(){
+				local num3=$1
+				local num4=$2
+				local sum=$((num3+num4))
+				echo "$sum"
+				return
+}
+
+num1=5
+num2=2
+
+sum=$(getSum num1 num2)
+
+
+echo $sum""

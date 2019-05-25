@@ -1,0 +1,14 @@
+#!/bin/bash
+
+num1=1.2
+num2=3.4
+
+num3=$(python -c "print $num2-$num1")
+echo "$num3"`
+`
+cat<<crap 
+This 
+is 
+the end
+crap
+

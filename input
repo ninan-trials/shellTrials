@@ -1,0 +1,20 @@
+#!/bin/bash
+
+read -p "Who the hal r u ?" name
+
+echo "Hello $name"
+
+# conditional
+read -p "age? " age
+
+if [ $age -ge 16 ]
+then
+				echo "Yay... ur ready"
+elif [ $age -eq 15 ]
+then 
+				echo "U'll be ready next year"
+else
+				echo "Ur not ready"
+fi
+
+
